@@ -1,0 +1,188 @@
+header{
+    margin-bottom: 5%;
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/001/842/887/small/light-red-background-with-spots-vector.jpg), color darkgray 50% / cover no-repeat;
+    width: 100%;
+    height: 45px;
+    flex-shrink: 0;
+    text-align: center;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: lightseagreen;
+    font-size: 28px;
+    padding: 0 10px;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+a:hover:after{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    text-shadow: 7px 7px 7px #121212;
+}
+h1{
+    color: white;
+}
+body{
+    background-image: url(https://media.istockphoto.com/id/619255802/vector/red-snowflakes-seamless-pattern.jpg?s=612x612&w=0&k=20&c=AJgfWiHZvuqKK6GuzkRq2ctklLdLhvubhZDpapaI_TY=);
+    align-items: center;
+    justify-content: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    text-align: left;
+    /* flex-direction: column; */
+    display: flex;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+input{
+    width: 166px;
+    height: 25px;
+}
+button{
+    text-align: center;
+    width: 166px;
+    height: 25px;
+}
+.upload{
+    align-items: center;
+    transition: width 3s;
+    transition: height 3s;
+    clip-path: circle();
+}
+.upload:hover{
+    width: 420px;
+    height: 270px;
+}
+.sdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.year{
+    width: 400px;
+    height: 250px;
+    clip-path: none;
+    transition: none;
+}
+p{
+    color: white;
+    text-align: center;
+}
+.gifts{
+    display: flex;
+    column-gap: 10px;
+}
+table{
+    border-collapse: collapse ;
+    border: 1px double ;
+    color: white;
+}
+tr{
+    border: solid;
+}
+th{
+    border: solid;
+    color: white;
+}
+td{
+    color: cyan;
+    padding: 10px;
+}
+td:hover{
+    color: cyan;
+}
+tr:hover{
+    background-color: green;
+}
+.box-1{
+    float: left;
+}
+.box-2{
+    float: right;
+}
+.known{
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: reverse;
+}
+@keyframes example{
+
+    0%{
+        background-color: cyan; 
+    }
+    50%{
+        background-color: green; 
+    }
+    100%{
+        background-color: chocolate;
+    }
+}
