@@ -1,0 +1,456 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    background-image: url(https://st4.depositphotos.com/1718493/24355/v/450/depositphotos_243557480-stock-illustration-vine-seamless-pattern-for-package.jpg);
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    padding: 0 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+a:hover:after{
+    width: 100%;
+}
+header{
+    background: -webkit-gradient(linear, left top, right top, from(rgba(2,0,36,1)), color-stop(57%, rgba(0,212,255,1)), to(rgba(9,9,121,1)));
+    background: -o-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 57%, rgba(9,9,121,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 57%, rgba(9,9,121,1) 100%);
+    padding: 40px;
+}
+.parent{
+    position: relative;
+    text-align: center;
+}
+p{
+    color: seashell;
+}
+.box{
+    height: 100vh;
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.box{
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 10px 25px rgb(0, 0, 0, 0.3);
+            box-shadow: 0 10px 25px rgb(0, 0, 0, 0.3)
+}
+.box:hover input{
+    width: 100px;
+}
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    background: transparent;
+}
+.box a .fas{
+    color: red;
+    font-size: 18px;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    display: block;
+}
+footer{
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+}
+.gmail{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100px;
+    left: 5px;
+    top: 50px;
+    bottom: 0;
+    padding: 10px;
+    margin-right: 500px;
+    margin-left: 660px;
+}
+.block{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+.COPYRIGHT{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.pic{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+#pic1{
+    display: none;
+    width: 400;
+    height: 250;
+}
+#pic2{
+    display: none;
+    width: 400;
+    height: 250;
+}
+#pic3{
+    display: none;
+    width: 400;
+    height: 250;
+}
+#pic4{
+    display: none;
+    width: 400;
+    height: 250;
+}
+#pic5{
+    display: none;
+    width: 400;
+    height: 250;
+}
+#pic6{
+    display: none;
+    width: 400;
+    height: 250;
+}
+.slider{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    align-items: center;
+    position: relative;
+    left: 250px;
+}
+.slider{
+    width: 970px;
+    height: 546px;
+    background: black;
+    -webkit-animation: slide 15s infinite;
+            animation: slide 15s infinite;
+    border-radius: 5cm;
+    -webkit-box-shadow: 5px 5px 5px rgb(66,64,64);
+            box-shadow: 5px 5px 5px rgb(66,64,64);
+}
+p{
+    text-align: center;
+    color: blueviolet;
+    font-size: medium;
+}
+
+@-webkit-keyframes slide{
+
+    25%{
+        background:url(https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/34/2023/06/EGE333_credit-Marius-Graf-Alamy-Stock-Photo-920x609.jpg) ;
+    }
+    50%{
+        background:url(https://thumbs.dreamstime.com/b/watercolor-glasses-red-rose-white-wines-isolated-white-background-watercolor-glasses-red-rose-white-wines-hand-129548639.jpg) ;
+    }
+    75%{
+        background:url(https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/34/2023/06/EGE333_credit-Marius-Graf-Alamy-Stock-Photo-920x609.jpg) ;
+    }
+    100%{
+        background:url(https://thumbs.dreamstime.com/b/watercolor-glasses-red-rose-white-wines-isolated-white-background-watercolor-glasses-red-rose-white-wines-hand-129548639.jpg) ;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    #pic1{
+        display: block;
+    }
+    #pic2{
+        display: block;
+    }
+    #pic3{
+        display: none;
+    }
+    #pic4{
+        display: none;
+    }
+    #pic5{
+        display: none;
+    }
+    #pic6{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    #pic1{
+        display: none;
+    }
+    #pic2{
+        display: none;
+    }
+    #pic3{
+        display: block;
+    }
+    #pic4{
+        display: block;
+    }
+    #pic5{
+        display: none;
+    }
+    #pic6{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    #pic1{
+        display: none;
+    }
+    #pic2{
+        display: none;
+    }
+    #pic3{
+        display: none;
+    }
+    #pic4{
+        display: none;
+    }
+    #pic5{
+        display: block;
+    }
+    #pic6{
+        display: block;
+    }
+}
+.known{
+    -webkit-animation-name: example;
+            animation-name: example;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: reverse;
+}
+@-webkit-keyframes example{
+
+    0%{
+        background-color: cyan; 
+    }
+    50%{
+        background-color: antiquewhite; 
+    }
+    100%{
+        background-color: burlywood;
+    }
+}
+@keyframes example{
+
+    0%{
+        background-color: cyan; 
+    }
+    50%{
+        background-color: antiquewhite; 
+    }
+    100%{
+        background-color: burlywood;
+    }
+}
+.search{
+    background-color: #323 ;
+    width: 170px;
+}
+.linkss{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.form{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    margin-right: 0px;
+}
+#pic7{
+    display: flex;
+    width: 220;
+    height: 150;
+}
+#pic8{
+    display: flex;
+    width: 220;
+    height: 150;
+}
+#pic9{
+    display: flex;
+    width: 220;
+    height: 150;
+}
+#pic10{
+    display: flex;
+    width: 220;
+    height: 150;
+}
+#pic11{
+    display: flex;
+    width: 220;
+    height: 150;
+    padding-left: 10px;
+}
+#pic12{
+    display: flex;
+    width: 220;
+    height: 150;
+    padding-left: 10px;
+}
+.partner{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+.partner{
+    align-items: center;
+    position: relative;
+    /* left: 250px;
+    right: 150px; */
+}
+.background{
+    background-color: #333;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.fixed{
+    background-color: #323;
+    padding: 10px;
+}
+
+
+
+
+
+
